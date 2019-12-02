@@ -18,8 +18,21 @@ Projeto criado para coletar as últimas postagens do Twitter, dada uma determina
  * Para a descrição da api do twitter, visite essa pagina:
    https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
 
+
+DOCUMENTAÇÃO DA APIs
+-------------
+
+Swagger no ASP.Net Core
+Para rodar sua API e acessar a documentação através do endpoint /swagger
+
+Exemplo:
+
+![alt text](https://github.com/Andreza-Dias-Lima/Projeto-PostTwitter/blob/master/api.gif)
+
+DOCUMENTAÇÃO DE COMO PODEMOS SUBIR UMA CÓPIA DESTE AMBIENTE LOCALMENTE
+-------------
+
 REQUIRIMENTOS
-------------
 
 Para acessar esse projeto precisará ter acesso a essa ferramentas
 
@@ -27,16 +40,12 @@ Para acessar esse projeto precisará ter acesso a essa ferramentas
  * SQLSERVER - Banco de Dados
  * VSCODE - Página em Angular
 
-INSTALAÇÃO
-------------
+INSTALAÇÃO(caso for necessário)
  
  * Install
    https://visualstudio.microsoft.com/vs/
    https://code.visualstudio.com/
    
-   
-INSTRUÇÕES
--------------
 
  * SQLSERVER - Rodar o script de criação do banco de dados - Criação dos Campos.sql;
  
@@ -57,23 +66,13 @@ INSTRUÇÕES
  
  post - add(post) = inclui os posts;
    http://localhost:63328/api/posts/Add{post}
-   
-    
+
+
 LOGGING
 -------------
 
 Para acessar o arquivo de logs acessar a pasta PostTwitter.api\Logs
 arquivo exemplo mylog-20191201.txt
 
-DOCUMENTAÇÃO DA APIs
--------------
-
-Swagger no ASP.Net Core
-Para rodar sua API e acessar a documentação através do endpoint /swagger
-
-Exemplo:
-
-![alt text](https://github.com/Andreza-Dias-Lima/Projeto-PostTwitter/blob/master/api.gif)
-   
    
 

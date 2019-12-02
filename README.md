@@ -1,6 +1,5 @@
 
-
-[Alt Text](https://github.com/Andreza-Dias-Lima/Projeto-PostTwitter/blob/master/twitter-logo.png)
+![alt text](https://github.com/Andreza-Dias-Lima/Projeto-PostTwitter/blob/master/twitter-logo_.png)
 
 # Projeto-PostTwitter
 ---------------------

@@ -48,16 +48,16 @@ INSTRUÇÕES
            http://localhost:63328/api/posts/getAll;
            
  get - getUsuarioMaxSeguidores() = retorna os 5 (cinco) usuários, da amostra coletada, que possuem mais seguidores;
-   http://localhost:63328/api/posts/getAll;
+   http://localhost:63328/api/posts/getUsuarioMaxSeguidores;
  
  get - getTotalPostPorData() = retorna o total de postagens, agrupadas por hora do dia;
-   http://localhost:63328/api/posts/getAll;
+   http://localhost:63328/api/posts/getTotalPostPorData;
   
  get - getTotalTagsPorLocal() = retorna o total de postagens para cada uma das #tag por idioma/país do usuário que postou;
-   http://localhost:63328/api/posts/getAll;
+   http://localhost:63328/api/posts/getTotalTagsPorLocal;
  
  post - add(post) = inclui os posts;
-   http://localhost:63328/api/posts/getAll;
+   http://localhost:63328/api/posts/Add{post};
    
     
 LOGGING

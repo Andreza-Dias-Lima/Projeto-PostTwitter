@@ -65,6 +65,15 @@ LOGGING
 Para acessar o arquivo de logs acessar a pasta PostTwitter.api\Logs
 arquivo exemplo mylog-20191201.txt
 
+DOCUMENTAÇÃO DA APIs
+-------------
+
+Swagger no ASP.Net Core
+Para rodar sua API e acessar a documentação através do endpoint /swagger
+
+Exemplo:
+
+![alt text](https://github.com/Andreza-Dias-Lima/Projeto-PostTwitter/blob/master/api.gif)
    
    
 

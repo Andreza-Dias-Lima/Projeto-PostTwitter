@@ -1,0 +1,202 @@
+swagger: "2.0"
+info:
+  description: "API criada para consumir e inserir dados das últimas postagens do Twitter, dada uma determinada #tag."
+  version: "1.0.0"
+  title: "Post Twitter"
+  termsOfService: "https://github.com/Andreza-Dias-Lima/Projeto-PostTwitter"
+  contact:
+    email: "a.sdlima@outlook.com"
+  license:
+    name: "Apache 2.0"
+    url: "https://github.com/Andreza-Dias-Lima/Projeto-PostTwitter"
+host: "petstore.swagger.io"
+basePath: "/v2"
+tags:
+- name: "post"
+  description: "Métodos referente ao post do twitter"
+  externalDocs:
+    description: ""
+    url: "http://localhost:63328/api"
+schemes:
+- "https"
+- "http"
+paths:
+  /post:
+    post:
+      tags:
+      - "post"
+      summary: "Add um novo post"
+      description: ""
+      operationId: "addPost"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Objeto post"
+        required: true
+        schema:
+          $ref: "#/definitions/Post"
+      responses:
+        405:
+          description: "Invalid input"
+  /post/getUsuarioMaxSeguidores:
+    get:
+      tags:
+      - "post"
+      summary: ""
+      description: "Retorna os 5 (cinco) usuários, da amostra coletada, que possuem mais seguidores."
+      operationId: "getUsuarioMaxSeguidores"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Post"
+        400:
+          description: "Invalid status value"
+  /post/getTotalPostPorData:
+    get:
+      tags:
+      - "post"
+      summary: ""
+      description: "Retorna o total de postagens, agrupadas por hora do dia (independentemente da #hashtag."
+      operationId: "getTotalPostPorData"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+            additionalProperties:
+              type: "integer"
+              format: "int32"
+  /post/getTotalTagsPorLocal:
+    get:
+      tags:
+      - "post"
+      summary: ""
+      description: ""
+      operationId: "getTotalTagsPorLocal"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+          headers:
+            X-Rate-Limit:
+              type: "integer"
+              format: "int32"
+              description: "calls per hour allowed by the user"
+            X-Expires-After:
+              type: "string"
+              format: "date-time"
+              description: "date in UTC when token expires"
+        400:
+          description: "Invalid username/password supplied"
+  /post/getAll:
+    get:
+      tags:
+      - "post"
+      summary: ""
+      description: "Retorna todos os posts coletados dado uma determinada #tag"
+      operationId: "getAll"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        default:
+          description: "successful operation"
+
+securityDefinitions:
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "http://petstore.swagger.io/oauth/dialog"
+    flow: "implicit"
+    scopes:
+      write:pets: "modify pets in your account"
+      read:pets: "read your pets"
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+definitions:
+
+  Usuario:
+    type: "object"
+    properties:
+      Id:
+        type: "integer"
+        format: "int64"
+      Nome:
+        type: "string"
+      Login:
+        type: "string"
+      QtdeSeguidores:
+        type: "integer"
+        format: "int64"
+      Cd_Twitter:
+        type: "string"
+      Ativo:
+        type: "boolean"
+        default: false
+    xml:
+      name: "Usuario"
+  Post:
+    type: "object"
+    required:
+    - "name"
+    - "photoUrls"
+    properties:
+      Id:
+        type: "integer"
+        format: "int64"
+      Descricao:
+        type: "string"
+      Data:
+        type: "string"
+        format: "date-time" 
+      Tag:
+        type: "string"
+      Local:
+        type: "string"
+      IdUsuario:
+        type: "integer"
+        format: "int64"
+      Ativo:
+        type: "boolean"
+        default: false
+      usuario:
+        type: "array"
+        xml:
+          name: "usuario"
+          wrapped: true
+        items:
+          $ref: "#/definitions/Usuario"
+    xml:
+      name: "Pet"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

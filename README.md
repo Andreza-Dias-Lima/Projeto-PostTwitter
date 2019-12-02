@@ -13,6 +13,8 @@ INTRODUÇÃO
 
 Projeto criado para coletar as últimas postagens do Twitter, dada uma determinada #tag.
 
+![alt text](https://github.com/Andreza-Dias-Lima/Projeto-PostTwitter/blob/master/web.gif)
+
  * Para a descrição da api do twitter, visite essa pagina:
    https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
 

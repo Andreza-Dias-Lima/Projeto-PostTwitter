@@ -45,7 +45,7 @@ INSTRUÇÕES
  * API - Para acessar a api no VS2019 o projeto "PostTwitter.sln" setar como principal "PostTwitter.API", segue os endereços dos métodos:
  
  get - getAll() = retorna todos os posts coletados durante a busca do projeto web;
-           http://localhost:63328/api/posts/getAll
+   http://localhost:63328/api/posts/getAll
            
  get - getUsuarioMaxSeguidores() = retorna os 5 (cinco) usuários, da amostra coletada, que possuem mais seguidores;
    http://localhost:63328/api/posts/getUsuarioMaxSeguidores

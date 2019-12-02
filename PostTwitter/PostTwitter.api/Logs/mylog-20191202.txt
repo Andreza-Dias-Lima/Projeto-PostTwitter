@@ -1,0 +1,15 @@
+2019-12-02T00:27:28.4803247-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:63328/api/posts/getAll   (ca22a1cb)
+2019-12-02T00:27:28.5626937-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Executing endpoint '"PostTwitter.api.Controllers.PostsController.GetAll (PostTwitter.api)"' (500cc934)
+2019-12-02T00:27:28.5823266-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAll\", controller = \"Posts\"}". Executing action "PostTwitter.api.Controllers.PostsController.GetAll (PostTwitter.api)" (a44c0341)
+2019-12-02T00:27:28.9312610-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Executing action method "PostTwitter.api.Controllers.PostsController.GetAll (PostTwitter.api)" - Validation state: Valid (dad538d7)
+2019-12-02T00:27:28.9325599-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] --------- Executando método getAll Posts ---------- (196770f1)
+2019-12-02T00:27:29.2196976-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Entity Framework Core "2.2.4-servicing-10062" initialized '"PostTwitterContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-12-02T00:27:29.5632498-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Data], [p].[Descricao], [p].[IdUsuario], [p].[Local], [p].[Tag]
+FROM [Twitter].[Post] AS [p]" (0723d8ff)
+2019-12-02T00:27:29.6242427-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] --------- Fim metodo getAll Posts ---------- (682952eb)
+2019-12-02T00:27:29.6293087-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Executed action method "PostTwitter.api.Controllers.PostsController.GetAll (PostTwitter.api)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 692.981ms. (50a9e262)
+2019-12-02T00:27:29.6407734-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[PostTwitter.api.Domain.Models.Post, PostTwitter.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2019-12-02T00:27:29.7331220-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Executed action "PostTwitter.api.Controllers.PostsController.GetAll (PostTwitter.api)" in 1146.5527ms (afa2e885)
+2019-12-02T00:27:29.7333346-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Executed endpoint '"PostTwitter.api.Controllers.PostsController.GetAll (PostTwitter.api)"' (99874f2b)
+2019-12-02T00:27:29.7384286-03:00 8000000a-0003-f500-b63f-84710c7967bb [INF] Request finished in 1264.3445ms 200 application/json; charset=utf-8 (791a596a)

@@ -1,0 +1,14 @@
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\bin\Release\netcoreapp2.2\PostTwitter.api.deps.json
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\bin\Release\netcoreapp2.2\PostTwitter.api.runtimeconfig.json
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\bin\Release\netcoreapp2.2\PostTwitter.api.runtimeconfig.dev.json
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\bin\Release\netcoreapp2.2\PostTwitter.api.dll
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\bin\Release\netcoreapp2.2\PostTwitter.api.pdb
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.csprojAssemblyReference.cache
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.csproj.CoreCompileInputs.cache
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.RazorAssemblyInfo.cache
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.RazorAssemblyInfo.cs
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.AssemblyInfoInputs.cache
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.AssemblyInfo.cs
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.RazorTargetAssemblyInfo.cache
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.dll
+C:\Users\andreza.lima\Downloads\Twitter\PostTwitter\PostTwitter.api\obj\Release\netcoreapp2.2\PostTwitter.api.pdb

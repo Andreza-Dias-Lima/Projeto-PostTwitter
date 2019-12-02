@@ -4,9 +4,9 @@
 ---------------------
    
  * Introdução
- * Requirimentos
- * Instalação
- * Configuração
+ * Documentação da APIs
+ * Documentação de como podemos subir uma cópia deste ambiente localmente
+ * Logging
 
 INTRODUÇÃO
 ------------
